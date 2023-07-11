@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open URL in New Window in JavaScript</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="base.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Open Window in new tab</h1>
+      <div class="card-list">
+        <!-- START -->
+        <div class="card-list__item card gradient-border">
+          <h2 class="card__title">
+            Window.open() Method To Open URL in New Window
+          </h2>
+          <div class="card__content">
+            <div class="card__text">
+              Click the button to open google in a new window
+            </div>
+          </div>
+          <div class="card__button-wrapper">
+            <button class="button-85" onclick="newTab()">Open google</button>
+          </div>
+        </div>
+        <!-- END -->
+        <!-- START -->
+        <div class="card-list__item card gradient-border">
+          <h2 class="card__title">Use Anchor Tag to Open URL</h2>
+          <div class="card__content">
+            <div class="card__text">
+              Click the button to open google in a new window
+            </div>
+          </div>
+          <div class="card__button-wrapper">
+            <a onclick='window.open("https://www.google.com", "_blank", "")'
+              >Hover Me To Open google</a
+            >
+          </div>
+        </div>
+        <!-- END -->
+        <!-- START -->
+        <div class="card-list__item card gradient-border">
+          <h2 class="card__title">Use Input Tag to Open URL</h2>
+          <div class="card__content">
+            <div class="card__text">
+              Click the button to open google in a new window
+            </div>
+          </div>
+          <div class="card__button-wrapper">
+            <input
+              type="button"
+              class="button-85"
+              onclick="window.open('https://www.google.com','programmer','');"
+              value="Open the window"
+            />
+          </div>
+        </div>
+        <!-- END -->
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open URL in New Window in JavaScript</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="heading">Open Window in new tab</h3>
+      <p>Click the button to open google in a new window</p>
+      <button class="button-85" onclick="newTab()">Open google page</button>
+    </div>
+
+    <script>
+      function newTab() {
+        window.open("https://www.google.com", "", "width=300,height=300");
+      }
+    </script>
+  </body>
+</html>
