@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Concepts Practical</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <!-- CSS -->
+  </head>
+  <body>
+    <div class="container my-24 mx-auto md:px-6">
+      <section class="mb-32">
+        <div class="flex justify-center">
+          <div class="max-w-[700px] text-center">
+            <p class="mb-6 text-3xl font-bold">JavaScript Concepts</p>
+          </div>
+        </div>
+        <div class="grid gap-x-6 md:grid-cols-2 lg:grid-cols-4 xl:gap-x-12">
+          <div class="mb-12">
+            <div class="flex">
+              <div class="ml-2 grow">
+                <p class="mb-1 font-bold">Number Array :</p>
+                <button
+                  onclick="numberArray()"
+                  class="bg-pink-800 hover:bg-red-300 hover:text-black text-white font-bold py-2 px-4 rounded"
+                >
+                  Console Me
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- START : An array containing different data types -->
+        <div class="grid gap-x-6 md:grid-cols-2 lg:grid-cols-4 xl:gap-x-12">
+          <div class="mb-12">
+            <div class="flex">
+              <div class="ml-2 grow">
+                <p class="mb-1 font-bold">Mixed Array :</p>
+                <button
+                  onclick="mixedArray()"
+                  class="bg-blue-900 hover:bg-red-300 hover:text-black text-white font-bold py-2 px-4 rounded"
+                >
+                  Console Me
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </section>
+    </div>
+
+    <script>
+      // An array containing numbers
+      function numberArray() {
+        const numberArray = [0, 1, 2, 3];
+        console.log("Number Array: [" + numberArray + "]");
+      }
+
+      // An array containing numbers
+      function mixedArray() {
+        const mixedArray = [1, "chicken", false];
+        console.log("Number Array: [" + mixedArray + "]");
+      }
+    </script>
+  </body>
+</html>

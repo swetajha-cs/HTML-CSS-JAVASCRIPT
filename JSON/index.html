@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Json Formate</title>
+  </head>
+  <body>
+    <script>
+      console.clear();
+
+      fetch("./planetinfo.json")
+        .then((response) => response.json())
+        .then((obj) => {
+          obj.forEach((description) => {
+            console.log(description);
+          });
+        })
+        .catch((err) => console.log(err));
+
+      fetch("./planetinfo.json")
+        .then((response) => response.json())
+        .then((obj) => {
+          displayFacts(obj.planets);
+        })
+        .catch((err) => console.log(err));
+
+      function displayFacts(planets) {
+        const largest = planets.reduce((acc, loc) =>
+          acc.radius > loc.radius ? acc : loc
+        );
+        const smallest = planets.reduce((acc, loc) =>
+          acc.radius > loc.radius ? acc : loc
+        );
+        console.log(
+          `The largest planet in the solar system is ${largest.name}`
+        );
+        console.log(
+          `The smallest planet in the solar system is ${smallest.name}`
+        );
+      }
+    </script>
+  </body>
+</html>
